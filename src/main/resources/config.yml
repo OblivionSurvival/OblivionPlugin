@@ -1,0 +1,63 @@
+# OblivionPlugin Configuration
+
+netherrack-restone: true
+pumpkin-redstone: true
+
+announcer:
+    # Enable announcer?
+    enabled: false
+    
+    # Announcer interval (seconds)
+    interval: 60
+    
+    # True: Random, False: Linear
+    randomized: true
+    
+    # Announcement message prefix (can be empty)
+    prefix: ""
+    
+    # List of all the messages to announce
+    messages:
+    - "Welcome!"
+    - "The admin hasn't configured this plugin!"
+
+dragonmanager:
+    # Disallow Ender Dragon spawning in non-End worlds
+    spawn-only-in-end: true
+    
+    # 
+
+jail:
+    # Enable jail?
+    enabled: false
+    
+    # Permission group to place Jailed players into
+    # (Their original group will be remembered for when they're unjailed)
+    jailed-group: 'Jail'
+    
+    # Default time to jail player if not specified
+    default-jail-time: 300
+    
+    # Disallow permanent player jailing
+    force-temporary-jails: true
+    
+    # Location to send jailed players to
+    # Sub-fields: world, x, y, z, yaw, pitch
+    jail-location:
+        world: world
+        x: 0
+        y: 64
+        z: 0
+        yaw: 0
+        pitch: 0
+    
+    # Location to return unjailed players to
+    # Sub-fields: world, x, y, z, yaw, pitch
+    unjail-location:
+        world: world
+        x: 0
+        y: 64
+        z: 0
+        yaw: 0
+        pitch: 0
+    

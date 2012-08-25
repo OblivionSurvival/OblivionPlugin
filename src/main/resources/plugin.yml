@@ -1,0 +1,113 @@
+name: OblivionPlugin
+version: 0.2.2
+author: Didz
+description: Oblivion Survival's Misc. Plugin
+website: http://www.oblivionsurvival.com/
+main: com.oblivionsurvival.oblivionplugin.OblivionPlugin
+database: false
+startup: postworld
+
+commands:
+  back:
+    description: Teleport a player to their last death location.
+    permission: oblivion.command.back
+    usage: "Usage: <command>"
+
+  helpop:
+    description: Messages a question to all online staff.
+    permission: oblivion.command.helpop
+    usage: "Usage: <command> <message...>"
+
+  achat:
+    description: Allows staff to communicate with each other privately.
+    permission: oblivion.command.achat
+    usage: "Usage: <command> <message...>"
+
+  gm:
+    description: Toggles your gamemode.
+    permission: oblivion.command.gm
+    usage: "Usage: <command>"
+
+  resetdragon:
+    description: Resets the Ender Dragon in The End.
+    permission: oblivion.command.resetdragon
+    usage: "Usage: <command>"
+
+  ignore:
+    description: Ignore/Unignore chat from another player.
+    permission: oblivion.ignore
+    usage: "Usage: <command> <player>"
+
+  ignorelist:
+    description: List ignored players.
+    permission: oblivion.ignorelist
+    usage: "Usage: <command> [player]"
+
+permissions:
+  oblivion.chat.forbiddenchars:
+    description: Allows players to write forbidden characters in chat
+    default: op
+
+  oblivion.chat.color:
+    description: Allows players to use coloured text in chat
+    default: op
+
+  oblivion.chat.magic:
+    description: Allows players to use magic (matrix-like) text in chat
+    default: op
+
+  oblivion.chat.format:
+    description: Allows players to use formatted text text in chat (bold, underline, etc.)
+    default: op
+
+  oblivion.sign.color:
+    description: Allows players to write coloured text on signs
+    default: op
+
+  oblivion.sign.magic:
+    description: Allows players to write magic (matrix-like) text on signs
+    default: op
+
+  oblivion.sign.format:
+    description: Allows players to write formatted text on signs (bold, underline, etc.)
+    default: op
+
+  oblivion.helpop.isstaff:
+    description: Specifies that this player will receive helpop messages
+    default: op
+
+  oblivion.achat.isstaff:
+    description: Specifies that this player will receive achat messages
+    default: op
+
+  oblivion.command.back:
+    description: Allows players to use the 'back' command
+    default: op
+
+  oblivion.command.helpop:
+    description: Allows players to use the 'helpop' command
+    default: op
+
+  oblivion.command.achat:
+    description: Allows players to use the 'achat' command
+    default: op
+
+  oblivion.command.gm:
+    description: Allows players to use the 'gm' command
+    default: op
+
+  oblivion.command.resetdragon:
+    description: Allows players to use the 'resetdragon' command
+    default: op
+
+  oblivion.ignore:
+    description: Allows players to ignore/unignore other players
+    default: op
+
+  oblivion.ignorelist.self:
+    description: Allows players to see the players they are ignoring
+    default: op
+
+  oblivion.ignorelist.other:
+    description: Allows players to see other players' ignore lists
+    default: op
